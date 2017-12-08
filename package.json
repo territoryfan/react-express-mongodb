@@ -1,0 +1,24 @@
+{
+  "name": "todolist",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "concurrently": "^3.5.1",
+    "es6-promise": "^4.1.1",
+    "jquery": "^3.1.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "start": "concurrently 'yarn react-start' 'cd server && yarn start'",
+    "react-build": "react-scripts build",
+    "build": "concurrently 'yarn react-build' 'cd server && yarn build'",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://127.0.0.1:5000"
+}
